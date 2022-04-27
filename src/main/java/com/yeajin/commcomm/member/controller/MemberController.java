@@ -1,5 +1,8 @@
 package com.yeajin.commcomm.member.controller;
 
-public class MemberController {
+import org.springframework.stereotype.Controller;
 
+@Controller("memberController")
+public class MemberController {
+	
 }

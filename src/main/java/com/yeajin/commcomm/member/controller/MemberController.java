@@ -16,4 +16,11 @@ public class MemberController {
 		ModelAndView mav = new ModelAndView(viewName);
 		return mav;
 	}
+	
+	@RequestMapping(value = "/signupForm.do", method = RequestMethod.GET)
+	public ModelAndView signupForm (HttpServletRequest request, HttpServletResponse response) {
+		String viewName = (String) request.getAttribute("viewName");
+		ModelAndView mav = new ModelAndView(viewName);
+		return mav;
+	}
 }

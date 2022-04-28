@@ -1,4 +1,4 @@
-package com.yeajin.commcomm.member.controller;
+package com.yeajin.commcomm.board.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller("memberController")
-public class MemberController {
-	@RequestMapping(value = "/loginForm.do", method = RequestMethod.GET)
-	public ModelAndView loginForm (HttpServletRequest request, HttpServletResponse response) {
+@Controller("boardController")
+public class BoardController {
+	@RequestMapping(value = "/board.do", method = RequestMethod.GET)
+	public ModelAndView getAllPost (HttpServletRequest request, HttpServletResponse response) {
 		String viewName = (String) request.getAttribute("viewName");
 		ModelAndView mav = new ModelAndView(viewName);
 		return mav;

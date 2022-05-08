@@ -16,4 +16,11 @@ public class BoardController {
 		ModelAndView mav = new ModelAndView(viewName);
 		return mav;
 	}
+	
+	@RequestMapping(value = "/writeForm.do", method = RequestMethod.GET)
+	public ModelAndView getWriteForm (HttpServletRequest request, HttpServletResponse response) {
+		String viewName = (String) request.getAttribute("viewName");
+		ModelAndView mav = new ModelAndView(viewName);
+		return mav;
+	}
 }

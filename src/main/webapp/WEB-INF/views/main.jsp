@@ -29,6 +29,5 @@
     <a class="nav-link" href="${contextPath}/board.do">전체 게시판</a>
   </li>
 </ul>
-
 </body>
 </html>

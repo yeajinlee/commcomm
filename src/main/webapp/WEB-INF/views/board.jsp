@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,31 +15,25 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">번호</th>
+      <th scope="col">카테고리</th>
+      <th scope="col">제목</th>
+      <th scope="col">조회수</th>
+      <th scope="col">작성자</th>
+      <th scope="col">작성일</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
+      <td>공지</td>
+      <td>공지입니다</td>
+      <td>5</td>
+      <td>manager</td>
+      <td>2022.04.26</td>
     </tr>
   </tbody>
 </table>
+<button onclick="location.href='${contextPath}/writeForm.do'" class="btn" style="background-color: #21325e; color: white;">글쓰기</button>
 </body>
 </html>

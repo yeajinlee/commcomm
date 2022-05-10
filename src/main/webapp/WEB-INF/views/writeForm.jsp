@@ -30,6 +30,10 @@
 				<td>본문</td>
 				<td><textarea rows="10px" cols="50px"></textarea></td>
 			</tr>
+			<tr>
+				<td>파일</td>
+				<td><input type="file"></td>
+			</tr>
 		</table>
 	</form>
 <button type="button" class="btn" onclick="history.back(-1)" style="background-color: white; color: #21325e; border: 1px solid #21325e">취소</button>

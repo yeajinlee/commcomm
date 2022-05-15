@@ -27,7 +27,7 @@
     <tr>
       <th scope="row">1</th>
       <td>공지</td>
-      <td><a href="#">공지입니다</a>&nbsp;[1]</td>
+      <td><a href="">공지입니다</a>&nbsp;<a href="#">[1]</a></td>
       <td>5</td>
       <td>manager</td>
       <td>2022.04.26</td>

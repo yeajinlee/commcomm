@@ -23,4 +23,10 @@ public class BoardController {
 		ModelAndView mav = new ModelAndView(viewName);
 		return mav;
 	}
+	@RequestMapping(value = "/post.do", method = RequestMethod.GET)
+	public ModelAndView getPostDetail (HttpServletRequest request, HttpServletResponse response) {
+		String viewName = (String) request.getAttribute("viewName");
+		ModelAndView mav = new ModelAndView(viewName);
+		return mav;
+	}
 }

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,6 +33,7 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div> -->
+  <button type="button" class="btn" onclick="location.href='${contextPath}/main.do'" style="background-color: white; color: #21325e; border: 1px solid #21325e">취소</button>
   <button type="submit" class="btn" style="background-color: #21325e; color: white;">회원가입</button>
 </form>
 </body>
